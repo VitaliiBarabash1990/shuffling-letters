@@ -7,9 +7,21 @@
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
-		<input type="text" id="textInput" placeholder="Введіть текст" />
-		<button>Відобразити</button>
+		<h1 id="title">Test for DEV-3</h1>
+		<p id="paragraf">Завдання</p>
+		<p id="question">
+			Введіть рядок, який потім відобразится під формою. Можете виділити окремі
+			символи або групи літер (через клік із Ctrl або виділяючий прямокутник) зі
+			зміною їхнього кольору. Виділені символи можна перетягувати в будь-яке
+			місце рядка або по всьому документу. При переміщенні однієї літери на
+			місце іншої вони міняються місцями, виключаючи накладання.
+			Використовується лише чистий JavaScript і CSS.
+		</p>
+		<div id="inputBlock">
+			<input type="text" id="textInput" placeholder="Введіть текст" />
+			<button onclick="renderText()" id="btn">Відобразити</button>
+		</div>
 		<div id="output"></div>
-		<script src=""></script>
+		<script src="./script/script.js"></script>
 	</body>
 </html>
